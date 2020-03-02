@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 强制让文档与设备的宽度保持1：1 -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 删除默认的苹果工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 在web app应用下状态条（屏幕顶部条）的颜色 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>演讲嘉宾</title>
+    <link rel="stylesheet" href="http://lib.albers.top/style/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="baseW-1100">
+    <div class="banner">
+        <img src="images/banner.png" alt="">
+    </div>
+    <div class="nav">
+        <a href="index.html" >首页</a>
+        <a href="metting.html">会议</a>
+        <a href="guest.html" class="cur">演讲嘉宾</a>
+        <a href="show.html">展览</a>
+        <a href="review.html">往届回顾</a>
+        <a href="chart.html">组织架构</a>
+        <a href="company_zanzhu.html">我要赞助</a>
+        <a href="company_login.html">我要参展</a>
+        <a href="guest_login.html">我要参观</a>
+        <a href="contact.html">联系我们</a>
+    </div>
+    <div class="baseW-1100 guest">
+        <!-- 演讲嘉宾 -->
+        <div class="now-guest-list baseW-1100 MgT70">
+            <div class="  base-tit-left">
+                <h1>演讲嘉宾</h1>
+            </div>
+            <div class="guest-list">
+                <div class="guest-item">
+                    <img src="images/test/test2.png" class="guest-img" alt="">
+                    <div class="guest-txt">
+                        <div class="guest-txt-top">
+                            <h1>魏克军</h1>
+                            <a href="javascript:void(0);" class="openLightBox">详情</a>
+                        </div>
+                        <p class="guest-desc">
+                            简介：博士，中国信息通信研究院高级工程师，IMT-2020(5G)推进组无线技术组副组长。
+                        </p>
+                        <p class="guest-talk-title">演讲主题：《我国5G技术研发试验测试进展》</p>
+                    </div>
+                    <div class="light-box">
+                        <div class="light-box-main">
+                            <div class="light-box-msg">
+                                <img src="http://www.861718.com/2017-5g/images/js13.jpg" alt="">
+                                <div class="light-box-txt">
+                                    <h1>姓名: <span class="name">王京</span></h1>
+                                    <p>简介: <span class="desc">清华大学电子工程系教授，清华信息科学与技术国家实验室副主任，清华大学信息技术研究院无线与移动通信技术研究中心主任。国家科技重大专项“新一代宽带无线移动通信网”总体专家组专家，负责第五代移动通信（5G）与新技术项目；工信部“IMT-2020（5G）推进组”专家组专家；国家“863”计划5G移动通信重大项目总体专家组专家；国家“863”计划卫星移动通信关键技术重大项目专家组专家。现任中国通信学会常务理事，北京通信学副理事长。</span></p>
+                                </div>
+                            </div>
+                            <div class="light-box-tit">
+                                <h1>主讲题目：</h1>
+                                <p>《基于学习的层析信道测量与建模》</p>
+                            </div>
+                            <a href="javascript:void(0);" class="light-box-close"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 历届嘉宾 -->
+        <div class="again-guest-list baseW-1100 MgT70">
+            <div class="  base-tit-left">
+                <h1>往届演讲嘉宾</h1>
+            </div>
+            <div class="guest-list">
+                <div class="guest-item">
+                    <img src="images/test/test2.png" class="guest-img" alt="">
+                    <div class="guest-txt">
+                        <div class="guest-txt-top">
+                            <h1>魏克军</h1>
+                            <a href="javascript:void(0);" class="openLightBox">详情</a>
+                        </div>
+                        <p class="guest-desc">
+                            简介：博士，中国信息通信研究院高级工程师，IMT-2020(5G)推进组无线技术组副组长。
+                        </p>
+                        <p class="guest-talk-title">演讲主题：《我国5G技术研发试验测试进展》</p>
+                    </div>
+                    <div class="light-box">
+                        <div class="light-box-main">
+                            <div class="light-box-msg">
+                                <img src="http://www.861718.com/2017-5g/images/js13.jpg" alt="">
+                                <div class="light-box-txt">
+                                    <h1>姓名: <span class="name">王京</span></h1>
+                                    <p>简介: <span class="desc">清华大学电子工程系教授，清华信息科学与技术国家实验室副主任，清华大学信息技术研究院无线与移动通信技术研究中心主任。国家科技重大专项“新一代宽带无线移动通信网”总体专家组专家，负责第五代移动通信（5G）与新技术项目；工信部“IMT-2020（5G）推进组”专家组专家；国家“863”计划5G移动通信重大项目总体专家组专家；国家“863”计划卫星移动通信关键技术重大项目专家组专家。现任中国通信学会常务理事，北京通信学副理事长。</span></p>
+                                </div>
+                            </div>
+                            <div class="light-box-tit">
+                                <h1>主讲题目：</h1>
+                                <p>《基于学习的层析信道测量与建模》</p>
+                            </div>
+                            <a href="javascript:void(0);" class="light-box-close"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 70px;" class="MgT70"></div>
+    <div class="footer">
+        <div class="web-map baseW-1100">
+            <a href="index.html" >首页</a>
+            <a href="metting.html">会议</a>
+            <a href="guest.html" class="cur">演讲嘉宾</a>
+            <a href="show.html">展览</a>
+            <a href="review.html">往届回顾</a>
+            <a href="chart.html">组织架构</a>
+            <a href="company_zanzhu.html">我要赞助</a>
+            <a href="company_login.html">我要参展</a>
+            <a href="guest_login.html">我要参观</a>
+            <a href="contact.html">联系我们</a>
+        </div>
+        <p>Copyright © 2000-2018　<a href="http://www.861718.com" target="_blank">861718.com　</a>
+            All rights reserved 版权所有 © 广州德禄讯信息科技有限公司</p>
+    </div>
+    <a href="javascript:scroll(0,0)" class="goBack"></a>
+</div>
+<script src="http://lib.albers.top/js/jquery-min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.openLightBox').on('click',function () {
+            $('.light-box').fadeIn(300)
+        });
+        $('.light-box-close').on('click', function () {
+           $('.light-box').fadeOut(300)
+        });
+    })
+</script>
+</body>
+</html>

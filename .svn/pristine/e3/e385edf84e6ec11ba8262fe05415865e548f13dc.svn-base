@@ -1,0 +1,85 @@
+<template>
+  <footer>
+    <div class="footer">
+      <div class="web-map baseW-750">
+        <router-link :to="item.url" v-for="item in link" :key="item.name">{{item.name}}</router-link>
+      </div>
+      <p> All rights reserved 版权所有 © 广州德禄讯信息科技有限公司</p>
+    </div>
+    <div class="introduce-btn">
+      <router-link to="/company_zanzhu">我要赞助</router-link>
+      <router-link to="/company_login">我要参展</router-link>
+      <router-link to="/guest_login">我要参观</router-link>
+    </div>
+  </footer>
+</template>
+
+
+<script>
+import nav from '@/utils/nav'
+
+export default {
+  data () {
+    return {
+      'link': nav
+    }
+  },
+  methods: {
+  }
+}
+</script>
+
+
+<style lang="stylus">
+/* 底部 */
+  .footer
+    font-size .875rem /* 14/16 */
+    font-weight normal
+    color #a3a3a3
+    text-align center
+    padding-top 30px
+    margin-top 70px
+    border-top 1px #ccc dashed
+    margin-bottom 90px
+    .web-map
+      display flex
+      justify-content center
+      align-items center
+      margin 0 auto 15px
+      text-align center
+      a
+        display block
+        color #333
+        margin-right 10px
+        &:last-child
+          margin-right 0
+        & + a
+          padding-left 10px
+          border-left 1px solid rgba(0,0,0,.3)
+    p
+      a
+        color: inherit
+
+  .introduce-btn
+    position fixed
+    bottom 15px
+    left 0
+    width: 100%
+    display flex
+    align-items center
+    justify-content center
+    a
+      flex 0 0 33.3333%
+      display block
+      font-size 12px
+      color #fff
+      text-align center
+      height 40px
+      line-height 40px
+      margin-bottom 25px
+      background #00a0ea
+      & + a
+        background #49b249
+      &:last-child
+        background: #ea5421
+</style>

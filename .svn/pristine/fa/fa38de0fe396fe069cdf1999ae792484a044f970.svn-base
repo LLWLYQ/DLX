@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 强制让文档与设备的宽度保持1：1 -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 删除默认的苹果工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 在web app应用下状态条（屏幕顶部条）的颜色 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>联系我们</title>
+    <link rel="stylesheet" href="http://lib.albers.top/style/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="baseW-1100">
+    <div class="banner">
+        <img src="images/banner.png" alt="">
+    </div>
+    <div class="nav">
+        <a href="index.html" >首页</a>
+        <a href="metting.html">会议</a>
+        <a href="guest.html">演讲嘉宾</a>
+        <a href="show.html">展览</a>
+        <a href="review.html">往届回顾</a>
+        <a href="chart.html">组织架构</a>
+        <a href="company_zanzhu.html">我要赞助</a>
+        <a href="company_login.html">我要参展</a>
+        <a href="guest_login.html">我要参观</a>
+        <a href="contact.html" class="cur">联系我们</a>
+    </div>
+    <!--联系我们-->
+    <div class="contact MgT70 baseW-1100">
+        <div class="  base-tit-left">
+            <h1>联系我们</h1>
+        </div>
+        <div class="contact-box MgT30">
+            <div class="contact-box-left">
+                <h1>广东省仪器仪表学会
+                    深圳市仪器仪表学会（广州联络处）</h1>
+                <p>地址：广州市新港中路艺影街11号丽影华庭会展时代写
+                    字楼2108室</p>
+                <p> 联系人：马先生；林小姐</p>
+                <p>电话：020-84133863；020-34397448</p>
+                <p>手机：13824486858；18825137388</p>
+                <p>邮箱：sva5225@163.com；fionalgd@163.com</p>
+            </div>
+            <div class="contact-box-right">
+                <h1>深圳市仪器仪表学会（秘书处）</h1>
+                <p>地址： 深圳南山区深南大道10128号南山数字文化产业基地
+                    东塔1楼A区</p>
+                <p>联系人：欧日旭先生</p>
+                <p>电话：0775-2320 7500</p>
+                <p>手机：13662444177</p>
+                <p>邮箱：ourixu@861718.com</p>
+            </div>
+        </div>
+    </div>
+    <div style="height: 70px;"></div>
+    <div class="footer">
+        <div class="web-map baseW-1100">
+            <a href="index.html" >首页</a>
+            <a href="metting.html">会议</a>
+            <a href="guest.html" class="cur">演讲嘉宾</a>
+            <a href="show.html">展览</a>
+            <a href="review.html">往届回顾</a>
+            <a href="chart.html">组织架构</a>
+            <a href="company_zanzhu.html">我要赞助</a>
+            <a href="company_login.html">我要参展</a>
+            <a href="guest_login.html">我要参观</a>
+            <a href="contact.html">联系我们</a>
+        </div>
+        <p>Copyright © 2000-2018　<a href="http://www.861718.com" target="_blank">861718.com　</a>
+            All rights reserved 版权所有 © 广州德禄讯信息科技有限公司</p>
+    </div>
+    <a href="javascript:scroll(0,0)" class="goBack"></a>
+</div>
+</body>
+</html>

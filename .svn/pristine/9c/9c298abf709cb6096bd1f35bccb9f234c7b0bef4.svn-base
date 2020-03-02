@@ -1,0 +1,289 @@
+<template>
+  <div class="baseW-1100">
+    <Header />
+    <!-- 展会介绍 -->
+    <div class="introduce">
+        <div class="introduce-thumb">
+            <img :src="result.image" alt="">
+        </div>
+        <div class="introduce-txt" v-html="result.content"></div>
+        <div class="introduce-btn">
+          <router-link to="/company_zanzhu">我要赞助</router-link>
+          <router-link to="/company_login">我要参展</router-link>
+          <router-link to="/guest_login">我要参观</router-link>
+        </div>
+    </div>
+    <!--展会嘉宾-->
+    <guest-list :result="result.member"></guest-list>
+    <!--组织架构 & 大会议题-->
+    <div class="organization-main">
+      <!--组织架构-->
+      <div class="organization-box">
+          <div class="base-tit">
+              <div class="base-tit_left">
+                  <h1>组织架构</h1>
+                  <p>Organization</p>
+              </div>
+              <router-link to="/chart" class="base-tit-right more">更多 + </router-link>
+          </div>
+          <div class="organization-list">
+              <div class="org-item">
+                  <span>主办单位：</span>
+                  <p>深圳市科学技术协会、深港科技社团联盟、广东省通信学会、
+                      广东省仪器仪表学会</p>
+              </div>
+              <div class="org-item">
+                  <span>承办单位：</span>
+                  <p>深圳市仪器仪表学会、深圳市通信与互联网协会、中国仪器仪表
+                      学会深圳联络处、深圳市星之球信息科技有限公司、广州德禄讯
+                      信息科技有限公司《仪器仪表商情》</p>
+              </div>
+              <div class="org-item">
+                  <span>协办单位：</span>
+                  <p>中国仪器仪表学会、广东省无线电协会、中国仪器仪表学会泛珠
+                      三角区域联盟秘书处、星球国际资讯集团</p>
+              </div>
+              <div class="org-item">
+                  <span>协办媒体：</span>
+                  <p>仪商网、激光制造网、光通讯网、网络通信中国、讯石光通讯资
+                      讯网、中国通讯人才网、CIO时代、中国通讯网移动通信网、通
+                      信人才网、网络电信</p>
+              </div>
+          </div>
+      </div>
+      <!--大会议题-->
+      <div class="topics-box">
+          <div class="base-tit">
+              <div class="base-tit_left">
+                  <h1>大会议题</h1>
+                  <p>Topics</p>
+              </div>
+              <router-link to="/metting" class="base-tit-right more">更多 + </router-link>
+          </div>
+          <ul class="topics-list">
+              <li>★ 5G 核心技术大会</li>
+              <li>★ 电子射频微波技术研讨会</li>
+              <li>★ EMC电磁兼容技术研讨会</li>
+              <li>★ 电子封装与测试技术研讨会</li>
+              <li>★ 通信系统设计与测试技术研讨会</li>
+              <li>★ 通信测试与建模技术研讨会</li>
+              <li>★ 工业互联网技术峰会</li>
+          </ul>
+      </div>
+    </div>
+    <!--往届回顾-->
+    <div class="review-box MgT70">
+      <div class="base-tit">
+          <div class="   base-tit_left">
+              <h1>往届回顾</h1>
+              <p>Previous reviews</p>
+          </div>
+          <router-link to="review" class="base-tit-right more">更多 +</router-link>
+      </div>
+      <div class="carousel-list carousel-box">
+          <div class="carousel-main-box">
+              <div class="carousel-wrapper" ref="carouselWrapper" @mouseover="closeAutoCarouse" @mouseout="autoCarouse">
+                  <div class="carousel-item" ref="carouselItem" v-for="item in result.review" :key="item">
+                      <img :src="item" alt="">
+                  </div>
+              </div>
+          </div>
+          <a href="javascript:void(0);"
+            @click="prev"
+            @mouseout="OpenAutoCarouse"
+            @mouseover="closeAutoCarouse"
+            class="prev btn"
+          ></a>
+          <a href="javascript:void(0);"
+            @click="next"
+            @mouseout="OpenAutoCarouse"
+            @mouseover="closeAutoCarouse"
+            class="next btn"
+          ></a>
+      </div>
+    </div>
+    <!--参会企业-->
+    <div class="company-go">
+        <div class="base-tit">
+            <div class="   base-tit_left">
+                <h1>参会企业</h1>
+                <p>Attending enterprises</p>
+            </div>
+        </div>
+        <div class="company-img-box">
+            <img src="http://lib.albers.top/activity/5g/test/test3.png" alt="">
+        </div>
+    </div>
+    <Footer />
+  </div>
+</template>
+
+<script>
+import HttpRequest, { baseURL } from '@/utils/axios'
+import Header from '@/layout/header/header'
+import Footer from '@/layout/footer/footer'
+import GuestList from '@/base/guest/guest'
+
+export default {
+  name: 'App',
+  data() {
+    return {
+        result: '',
+        carousel: {
+            oldX: 0,
+        }
+    }
+  },
+  mounted() {
+    this.getIndexResult()
+    setTimeout(() => {
+        this.autoCarouse()
+    }, 1000)
+  },
+  methods: {
+    getIndexResult() {
+        HttpRequest.get(`${baseURL}/five/data/index`).then((res) => {
+            this.result = res
+        })
+    },
+    // 自动轮播
+    autoCarouse() {
+        const main = this.$refs.carouselWrapper
+        const itemW = this.$refs.carouselItem[0].offsetWidth + 20
+        this.timer = setInterval(() => {
+            this.carousel.oldX += -itemW
+            if (Math.abs(this.carousel.oldX) >= main.offsetWidth) {
+                this.carousel.oldX = 0
+            }
+            main.style.transform = `translate3d(${this.carousel.oldX}px, 0, 0)`
+        }, 3000)
+    },
+    // 下一页
+    next() {
+        const itemW = this.$refs.carouselItem[0].offsetWidth + 20 // 20是margin距离
+        const indexOff = this.$refs.carouselItem.length * itemW
+        const main = this.$refs.carouselWrapper
+        const newX = this.calculative(this.carousel.oldX, itemW)
+        if (newX + indexOff < main.offsetWidth) {
+            return
+        }
+        main.style.transform = `translate3d(${newX}px, 0, 0)`
+    },
+    // 上一页
+    prev() {
+        const itemW = this.$refs.carouselItem[0].offsetWidth + 20 // 20是margin距离
+        const main = this.$refs.carouselWrapper
+        let newX = 0
+        if (this.carousel.oldX === 0) {
+            newX = 0
+        } else {
+            newX = this.calculative(this.carousel.oldX, itemW, false)
+        }
+        main.style.transform = `translate3d(${newX}px, 0, 0)`
+    },
+    // 计算偏移差值
+    calculative(oldX, runX, flag = true) {
+        let newX;
+        if (flag) {
+            newX = oldX + (-runX)
+        } else {
+            newX = oldX + runX
+        }
+        this.carousel.oldX = newX
+        return newX
+    },
+    // 开启自动轮播
+    OpenAutoCarouse() {
+        this.autoCarouse()
+    },
+    // 关闭自动轮播
+    closeAutoCarouse() {
+        clearInterval(this.timer)
+    }
+  },
+  components: {
+    Header,
+    Footer,
+    GuestList
+  }
+}
+</script>
+
+<style lang="stylus">
+  // 展会介绍
+  .introduce
+    display flex
+    justify-content space-between
+    align-items flex-start
+    margin-top 50px
+    .introduce-thumb
+      width 410px
+      height 290px
+    .introduce-txt
+      flex 1
+      margin 0 15px
+      .introduce-txt p
+        line-height 24px
+        text-indent 20px
+    .introduce-btn
+      width: 200px
+      a
+        display block
+        font-size 20px
+        color #fff
+        text-align center
+        width 100%
+        height 70px
+        line-height 70px
+        margin-bottom 25px
+        background #00a0ea
+        & + a
+          background #49b249
+        &:last-child
+          background: #ea5421
+  // 组织架构
+  .organization-main
+    display flex
+    justify-content space-between
+    align-items flex-start
+    margin-top 70px
+    .organization-box
+      width 650px
+    .topics-box
+      width 370px
+    .organization-list
+      font-size 16px
+      padding 25px 35px 25px 15px
+      border 1px solid #e5e5e5
+      .org-item
+        display flex
+        justify-content space-between
+        align-items flex-start
+        & + .org-item
+          margin-top: 25px
+        span
+          display block
+          width 85px
+          color #00a0ea
+        p
+          flex 1
+          line-height 30px
+    .topics-list
+        height 430px
+        padding 25px
+        border 1px solid #e5e5e5
+        box-sizing: border-box
+        li
+          font-size 18px
+          margin-bottom 20px
+          color #727171
+  /*参会企业*/
+  .company-go
+    margin-top: 70px;
+    .company-img-box
+      margin-top 30px
+      border 1px solid #727171
+      img
+        margin: auto
+</style>
+

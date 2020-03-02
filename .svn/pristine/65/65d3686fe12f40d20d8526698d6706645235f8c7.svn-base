@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 强制让文档与设备的宽度保持1：1 -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 删除默认的苹果工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 在web app应用下状态条（屏幕顶部条）的颜色 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>会议</title>
+    <link rel="stylesheet" href="http://lib.albers.top/style/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="baseW-1100">
+        <div class="banner">
+            <img src="images/banner.png" alt="">
+        </div>
+        <div class="nav">
+            <a href="index.html" >首页</a>
+            <a href="metting.html" class="cur">会议</a>
+            <a href="guest.html">演讲嘉宾</a>
+            <a href="show.html">展览</a>
+            <a href="review.html">往届回顾</a>
+            <a href="chart.html">组织架构</a>
+            <a href="company_zanzhu.html">我要赞助</a>
+            <a href="company_login.html">我要参展</a>
+            <a href="guest_login.html">我要参观</a>
+            <a href="contact.html">联系我们</a>
+        </div>
+        <!--会议介绍-->
+        <div class="referral baseW-1100 MgT70">
+            <div class="  base-tit-left">
+                <h1>会议介绍</h1>
+            </div>
+            <div class="referral-msg">
+                <p>5G通信、工业互联网作为新一代信息技术与制造业深度融合的技术，从移动互联网到万物互联时代，日益成为新工业革命的关键支撑和“互联网+先进制造业”的重要基石。</p>
+                <p>放眼各行各业，电子通信测试技术与工业互联网融合无处不在， 以工业互联与通讯、传感技术为基础，伴随着工业互联网、大数据、云计算等新技术在各个领域的广泛应用。工业用户该如何深入的应用通信与工业互联网技术，实现更加智能、高效、灵活的运营和生产，并不断挖掘新的价值呢？ </p>
+                <p>以“连接通信技术，创造工业互联价值”为主题，2019中国通信与工业互联网展览会 IMCA第十六届国际论坛暨2019 中国5G核心技术大会，将于2019年5月8-10日，将在深圳会展中心隆重举办。同期将举办2019 中国5G核心技术大会。</p>
+            </div>
+        </div>
+        <!-- 演讲嘉宾 -->
+        <div class="now-guest-list baseW-1100 MgT70">
+            <div class="  base-tit-left">
+                <h1>演讲嘉宾</h1>
+                <a href="guest.html">更多 +</a>
+            </div>
+            <div class="guest-list">
+                <div class="guest-item">
+                    <img src="images/test/test2.png" class="guest-img" alt="">
+                    <div class="guest-txt">
+                        <div class="guest-txt-top">
+                            <h1>魏克军</h1>
+                            <a href="javascript:void(0);" class="openLightBox">详情</a>
+                        </div>
+                        <p class="guest-desc">
+                            简介：博士，中国信息通信研究院高级工程师，IMT-2020(5G)推进组无线技术组副组长。
+                        </p>
+                        <p class="guest-talk-title">演讲主题：《我国5G技术研发试验测试进展》</p>
+                    </div>
+                    <div class="light-box">
+                        <div class="light-box-main">
+                            <div class="light-box-msg">
+                                <img src="http://www.861718.com/2017-5g/images/js13.jpg" alt="">
+                                <div class="light-box-txt">
+                                    <h1>姓名: <span class="name">王京</span></h1>
+                                    <p>简介: <span class="desc">清华大学电子工程系教授，清华信息科学与技术国家实验室副主任，清华大学信息技术研究院无线与移动通信技术研究中心主任。国家科技重大专项“新一代宽带无线移动通信网”总体专家组专家，负责第五代移动通信（5G）与新技术项目；工信部“IMT-2020（5G）推进组”专家组专家；国家“863”计划5G移动通信重大项目总体专家组专家；国家“863”计划卫星移动通信关键技术重大项目专家组专家。现任中国通信学会常务理事，北京通信学副理事长。</span></p>
+                                </div>
+                            </div>
+                            <div class="light-box-tit">
+                                <h1>主讲题目：</h1>
+                                <p>《基于学习的层析信道测量与建模》</p>
+                            </div>
+                            <a href="javascript:void(0);" class="light-box-close"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 历届嘉宾 -->
+        <div class="again-guest-list baseW-1100 MgT70">
+            <div class="  base-tit-left">
+                <h1>往届演讲嘉宾</h1>
+                <a href="guest.html">更多 +</a>
+            </div>
+            <div class="guest-list">
+                <div class="guest-item">
+                    <img src="images/test/test2.png" class="guest-img" alt="">
+                    <div class="guest-txt">
+                        <div class="guest-txt-top">
+                            <h1>魏克军</h1>
+                            <a href="javascript:void(0);" class="openLightBox">详情</a>
+                        </div>
+                        <p class="guest-desc">
+                            简介：博士，中国信息通信研究院高级工程师，IMT-2020(5G)推进组无线技术组副组长。
+                        </p>
+                        <p class="guest-talk-title">演讲主题：《我国5G技术研发试验测试进展》</p>
+                    </div>
+                    <div class="light-box">
+                        <div class="light-box-main">
+                            <div class="light-box-msg">
+                                <img src="http://www.861718.com/2017-5g/images/js13.jpg" alt="">
+                                <div class="light-box-txt">
+                                    <h1>姓名: <span class="name">王京</span></h1>
+                                    <p>简介: <span class="desc">清华大学电子工程系教授，清华信息科学与技术国家实验室副主任，清华大学信息技术研究院无线与移动通信技术研究中心主任。国家科技重大专项“新一代宽带无线移动通信网”总体专家组专家，负责第五代移动通信（5G）与新技术项目；工信部“IMT-2020（5G）推进组”专家组专家；国家“863”计划5G移动通信重大项目总体专家组专家；国家“863”计划卫星移动通信关键技术重大项目专家组专家。现任中国通信学会常务理事，北京通信学副理事长。</span></p>
+                                </div>
+                            </div>
+                            <div class="light-box-tit">
+                                <h1>主讲题目：</h1>
+                                <p>《基于学习的层析信道测量与建模》</p>
+                            </div>
+                            <a href="javascript:void(0);" class="light-box-close"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--会议论坛-->
+        <div class="metting-page baseW-1100 MgT70">
+            <div class="  base-tit-left">
+                <h1>会议论坛</h1>
+            </div>
+            <div class="MgT30">
+                <img src="images/metting-banner.png" alt="">
+            </div>
+        </div>
+        <!--议程安排-->
+        <div class="agenda baseW-1100 MgT70">
+            <div class="  base-tit-left">
+                <h1>议程安排</h1>
+            </div>
+            <p class="agenda-txt MgT30">研讨主题：电子射频微波技术、EMC电磁兼容技术、电子封装与测试技术、通信系统设计与测试技术、通信测试与建模技术、工业互联网</p>
+            <table class="agenda-table" cellpadding="0" cellspacing="0" border="1">
+                <thead>
+                    <tr align="center">
+                        <td width="220px">日期</td>
+                        <td width="220px">时间</td>
+                        <td width="220px">会展</td>
+                        <td width="444px">内容</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="big">
+                        <td colspan="4">
+                            <strong>2019中国通信与工业互联网展览会</strong>
+                            <p>主题演讲（几个分会场同时进行）</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="9">
+                            5月8日
+                        </td>
+                        <td>10:00-10:30</td>
+                        <td colspan="2">2019 中国（深圳）5G核心技术大会主会场开幕式</td>
+                    </tr>
+                    <tr>
+                        <td>10:30-17:00</td>
+                        <td colspan="2">2019 中国5G核心技术大会</td>
+                    </tr>
+                    <tr>
+                        <td>12:00-14:00</td>
+                        <td colspan="2">午餐，茶歇</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">14:00-17:00</td>
+                        <td>会场A</td>
+                        <td>主题演讲：5G与射频微波天线</td>
+                    </tr>
+                    <tr>
+                        <td>会场B</td>
+                        <td>主题演讲：EMC/EMI电磁兼容</td>
+                    </tr>
+                    <tr>
+                        <td>会场C</td>
+                        <td>主题演讲：封装与测试</td>
+                    </tr>
+                    <tr>
+                        <td>会场D</td>
+                        <td>主题演讲：通信系统设计与测试技术</td>
+                    </tr>
+                    <tr>
+                        <td>会场E</td>
+                        <td>主题演讲：通信测试与建模技术</td>
+                    </tr>
+                    <tr>
+                        <td>18:00-20:00</td>
+                        <td colspan="3">交流晚宴</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            主题演讲（几个分会场同时进行）
+                        </td>
+                    </tr>
+                    <!--第二栏-->
+                    <tr>
+                        <td rowspan="8">5月9日</td>
+                        <td rowspan="5">10:30-12:30</td>
+                        <td>会场A</td>
+                        <td>展示交流会：5G与射频微波天线</td>
+                    </tr>
+                    <tr>
+                        <td>会场B</td>
+                        <td>展示交流会：EMC/EMI电磁兼容</td>
+                    </tr>
+                    <tr>
+                        <td>会场C</td>
+                        <td>展示交流会：封装与测试</td>
+                    </tr>
+                    <tr>
+                        <td>会场D</td>
+                        <td>主题演讲：通信系统设计与测试技术</td>
+                    </tr>
+                    <tr>
+                        <td>会场E</td>
+                        <td>主题演讲：通信测试与建模技术</td>
+                    </tr>
+                    <tr>
+                        <td>12:00-14:00</td>
+                        <td colspan="2">午餐，茶歇</td>
+                    </tr>
+                    <tr>
+                        <td>14:00-17:00</td>
+                        <td colspan="2">工业互联网技术大会</td>
+                    </tr>
+                    <tr>
+                        <td>18:00-20:00</td>
+                        <td colspan="2">交流晚宴</td>
+                    </tr>
+                    <tr>
+                        <td>5月10日</td>
+                        <td>10:00-12:00</td>
+                        <td colspan="2">待定</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--参会嘉宾-->
+        <div class="metting-guest baseW-1100 MgT70">
+            <div class="  base-tit-left">
+                <h1>参会嘉宾</h1>
+            </div>
+            <div class="metting-guest-box MgT30">
+                <p>科研机构、专家学者、实验室负责人、仪器企业负责人、相关政府部门及相关学会协会领导、运营商、设备厂商、经销商、终端厂商等
+                    电子通信测试测量仪表与设备厂商</p>
+                <p>微波射频、毫米波、天线、无线通信、EMC电磁兼容、工业互联网等上中下游企业
+                    国家检测认证中心、科研机构、高校实验室等</p>
+                <p>通讯、广电、信息技术、智能制造、工业、互联网等行业专业人员</p>
+                <a href="" class="apply MgT70">听众报名</a>
+            </div>
+        </div>
+        <div style="height: 70px"></div>
+        <div class="footer">
+            <div class="web-map baseW-1100">
+                <a href="index.html" >首页</a>
+                <a href="metting.html">会议</a>
+                <a href="guest.html" class="cur">演讲嘉宾</a>
+                <a href="show.html">展览</a>
+                <a href="review.html">往届回顾</a>
+                <a href="chart.html">组织架构</a>
+                <a href="company_zanzhu.html">我要赞助</a>
+                <a href="company_login.html">我要参展</a>
+                <a href="guest_login.html">我要参观</a>
+                <a href="contact.html">联系我们</a>
+            </div>
+            <p>Copyright © 2000-2018　<a href="http://www.861718.com" target="_blank">861718.com　</a>
+                All rights reserved 版权所有 © 广州德禄讯信息科技有限公司</p>
+        </div>
+        <a href="javascript:scroll(0,0)" class="goBack"></a>
+    </div>
+<script src="http://lib.albers.top/js/jquery-min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.openLightBox').on('click',function () {
+            $('.light-box').fadeIn(300)
+        });
+        $('.light-box-close').on('click', function () {
+            $('.light-box').fadeOut(300)
+        });
+    })
+</script>
+</body>
+</html>

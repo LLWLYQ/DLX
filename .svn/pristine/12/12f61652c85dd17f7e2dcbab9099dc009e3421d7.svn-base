@@ -1,0 +1,8 @@
+/dev/
+/config/
+/build/
+/src/store/index.js
+/src/router/index.js
+/src/client.js
+/src/app.js
+/*.js

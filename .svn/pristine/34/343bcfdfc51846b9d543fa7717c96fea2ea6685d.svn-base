@@ -1,0 +1,7 @@
+module.exports = {
+  // 打包环境目录
+  static: {
+   'css': '/static/css/',
+   'js': '/static/js/'
+  }
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 强制让文档与设备的宽度保持1：1 -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 删除默认的苹果工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 在web app应用下状态条（屏幕顶部条）的颜色 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>5G大会</title>
+    <link rel="stylesheet" href="http://lib.albers.top/style/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="baseW-1100">
+        <div class="banner">
+            <img src="images/banner.png" alt="">
+        </div>
+        <div class="nav">
+            <a href="index.html" class="cur">首页</a>
+            <a href="metting.html">会议</a>
+            <a href="guest.html">演讲嘉宾</a>
+            <a href="show.html">展览</a>
+            <a href="review.html">往届回顾</a>
+            <a href="chart.html">组织架构</a>
+            <a href="company_zanzhu.html">我要赞助</a>
+            <a href="company_login.html">我要参展</a>
+            <a href="guest_login.html">我要参观</a>
+            <a href="contact.html">联系我们</a>
+        </div>
+        <!-- 展会介绍 -->
+        <div class="introduce baseW-1100">
+            <div class="introduce-thumb">
+                <img src="images/test/test1.gif" alt="">
+            </div>
+            <div class="introduce-txt">
+                <p>5G通信、工业互联网作为新一代信息技术与制造业深度融合的技术，从移动互联网到万物互联时代，日益成为新工业革命的关键支撑和“互联网+先进制造业”的重要基石。</p>
+                <p>放眼各行各业，电子通信测试技术与工业互联网融合无处不在， 以工业互联与通讯、传感技术为基础，伴随着工业互联网、大数据、云计算等新技术在各个领域的广泛应用。工业用户该如何深入的应用通信与工业互联网技术，实现更加智能、高效、灵活的运营和生产，并不断挖掘新的价值呢？ </p>
+                <p>以“连接通信技术，创造工业互联价值”为主题，2019中国通信与工业互联网展览会 IMCA第十六届国际论坛暨2019 中国5G核心技术大会，将于2019年5月8-10日，将在深圳会展中心隆重举办。同期将举办2019 中国5G核心技术大会。</p>
+            </div>
+            <div class="introduce-btn">
+                <a href="company_zanzhu.html">我要赞助</a>
+                <a href="company_login.html">我要参展</a>
+                <a href="guest_login.html">我要参观</a>
+            </div>
+        </div>
+        <!--展会嘉宾-->
+        <div class="old-guest-list baseW-1100">
+            <div class="base-tit">
+                <div class=" base-tit_left">
+                    <h1>往届参会嘉宾</h1>
+                    <p>Previous participants</p>
+                </div>
+                <a href="guest.html" class="base-tit_right more">更多 + </a>
+            </div>
+            <div class="guest-list">
+                <div class="guest-item">
+                    <img src="images/test/test2.png" class="guest-img" alt="">
+                    <div class="guest-txt">
+                        <div class="guest-txt-top">
+                            <h1>魏克军</h1>
+                            <a href="javascript:void(0);" class="openLightBox">详情</a>
+                        </div>
+                        <p class="guest-desc">
+                            简介：博士，中国信息通信研究院高级工程师，IMT-2020(5G)推进组无线技术组副组长。
+                        </p>
+                        <p class="guest-talk-title">演讲主题：《我国5G技术研发试验测试进展》</p>
+                    </div>
+                    <div class="light-box">
+                        <div class="light-box-main">
+                            <div class="light-box-msg">
+                                <img src="http://www.861718.com/2017-5g/images/js13.jpg" alt="">
+                                <div class="light-box-txt">
+                                    <h1>姓名: <span class="name">王京</span></h1>
+                                    <p>简介: <span class="desc">清华大学电子工程系教授，清华信息科学与技术国家实验室副主任，清华大学信息技术研究院无线与移动通信技术研究中心主任。国家科技重大专项“新一代宽带无线移动通信网”总体专家组专家，负责第五代移动通信（5G）与新技术项目；工信部“IMT-2020（5G）推进组”专家组专家；国家“863”计划5G移动通信重大项目总体专家组专家；国家“863”计划卫星移动通信关键技术重大项目专家组专家。现任中国通信学会常务理事，北京通信学副理事长。</span></p>
+                                </div>
+                            </div>
+                            <div class="light-box-tit">
+                                <h1>主讲题目：</h1>
+                                <p>《基于学习的层析信道测量与建模》</p>
+                            </div>
+                            <a href="javascript:void(0);" class="light-box-close"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--组织架构-->
+        <div class="organization-main baseW-1100">
+            <!--组织架构-->
+            <div class="organization-box">
+                <div class="base-tit">
+                    <div class="base-tit_left">
+                        <h1>组织架构</h1>
+                        <p>Organization</p>
+                    </div>
+                    <a href="chart.html" class="base-tit-right more">更多 + </a>
+                </div>
+                <div class="organization-list">
+                    <div class="org-item">
+                        <span>主办单位：</span>
+                        <p>深圳市科学技术协会、深港科技社团联盟、广东省通信学会、
+                            广东省仪器仪表学会</p>
+                    </div>
+                    <div class="org-item">
+                        <span>承办单位：</span>
+                        <p>深圳市仪器仪表学会、深圳市通信与互联网协会、中国仪器仪表
+                            学会深圳联络处、深圳市星之球信息科技有限公司、广州德禄讯
+                            信息科技有限公司《仪器仪表商情》</p>
+                    </div>
+                    <div class="org-item">
+                        <span>协办单位：</span>
+                        <p>中国仪器仪表学会、广东省无线电协会、中国仪器仪表学会泛珠
+                            三角区域联盟秘书处、星球国际资讯集团</p>
+                    </div>
+                    <div class="org-item">
+                        <span>协办媒体：</span>
+                        <p>仪商网、激光制造网、光通讯网、网络通信中国、讯石光通讯资
+                            讯网、中国通讯人才网、CIO时代、中国通讯网移动通信网、通
+                            信人才网、网络电信</p>
+                    </div>
+                </div>
+            </div>
+            <!--大会议题-->
+            <div class="topics-box">
+                <div class="base-tit">
+                    <div class="base-tit_left">
+                        <h1>大会议题</h1>
+                        <p>Topics</p>
+                    </div>
+                    <a href="metting.html" class="base-tit-right more">更多 + </a>
+                </div>
+                <ul class="topics-list">
+                    <li>★ 5G 核心技术大会</li>
+                    <li>★ 电子射频微波技术研讨会</li>
+                    <li>★ EMC电磁兼容技术研讨会</li>
+                    <li>★ 电子封装与测试技术研讨会</li>
+                    <li>★ 通信系统设计与测试技术研讨会</li>
+                    <li>★ 通信测试与建模技术研讨会</li>
+                    <li>★ 工业互联网技术峰会</li>
+                </ul>
+            </div>
+        </div>
+        <!--往届回顾-->
+        <div class="review-box baseW-1100">
+            <div class="base-tit">
+                <div class="   base-tit_left">
+                    <h1>往届回顾</h1>
+                    <p>Previous reviews</p>
+                </div>
+                <a href="" class="base-tit-right more">更多 + </a>
+            </div>
+            <div class="carousel-list carousel-box">
+                <div class="carousel-main-box">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="prev btn"></a>
+                <a href="javascript:void(0);" class="next btn"></a>
+            </div>
+        </div>
+        <!--参会企业-->
+        <div class="company-go baseW-1100">
+            <div class="base-tit">
+                <div class="   base-tit_left">
+                    <h1>参会企业</h1>
+                    <p>Attending enterprises</p>
+                </div>
+                <a href="" class="base-tit-right more">更多 + </a>
+            </div>
+            <div class="company-img-box">
+                <img src="images/test/test3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div style="height: 70px"></div>
+    <div class="footer">
+        <div class="web-map baseW-1100">
+            <a href="index.html" >首页</a>
+            <a href="metting.html">会议</a>
+            <a href="guest.html" class="cur">演讲嘉宾</a>
+            <a href="show.html">展览</a>
+            <a href="review.html">往届回顾</a>
+            <a href="chart.html">组织架构</a>
+            <a href="company_zanzhu.html">我要赞助</a>
+            <a href="company_login.html">我要参展</a>
+            <a href="guest_login.html">我要参观</a>
+            <a href="contact.html">联系我们</a>
+        </div>
+        <p>Copyright © 2000-2018　<a href="http://www.861718.com" target="_blank">861718.com　</a>
+            All rights reserved 版权所有 © 广州德禄讯信息科技有限公司</p>
+    </div>
+    <a href="javascript:scroll(0,0)" class="goBack"></a>
+    <script src="http://lib.albers.top/js/jquery-min.js"></script>
+    <script src="http://lib.albers.top/js/carousel.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.openLightBox').on('click',function () {
+                $('.light-box').fadeIn(300)
+            });
+            $('.light-box-close').on('click', function () {
+                $('.light-box').fadeOut(300)
+            });
+        })
+    </script>
+</body>
+</html>

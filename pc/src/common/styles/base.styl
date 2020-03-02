@@ -1,0 +1,196 @@
+@import './public.styl'
+
+/* uft-8 */
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img {
+    margin: 0;
+    padding: 0
+}
+body, html{
+    font: 14px/1.5 "Microsoft YaHei", Arial
+    transition: all .3s linear
+}
+fieldset,img {
+    border: 0
+}
+img {
+    display: block
+}
+address,caption,cite,code,dfn,th,var {
+    font-style: normal;
+    font-weight: normal
+}
+ul,ol {
+    list-style: none
+}
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+select,input {
+    vertical-align: middle
+}
+select,input,textarea {
+    font-size: 12px;
+    margin: 0
+}
+input[type="text"],input[type="password"],textarea {
+    outline-style: none;
+    -webkit-appearance: none
+}
+textarea {
+    resize: none
+}
+table {
+    border-collapse: collapse
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+.clear{
+    clear: both;
+}
+.clear::after{
+    content: "";
+    display: table;
+}
+.baseW-1400 {
+    width: 1400px;
+    margin: auto;
+}
+.baseW-1200 {
+    width: 1200px;
+    margin: auto;
+}
+.baseW-1100 {
+    width: 1100px;
+    margin: auto;
+}
+
+.MgT70 {
+    margin-top: 50px;
+}
+.MgT30 {
+    margin-top: 30px;
+}
+
+// 轮播图
+.carousel-box{
+    margin: 30px 0;
+    position: relative;
+}
+.carousel-box .carousel-main-box {
+    min-height: 180px;
+    margin: 0 50px;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-main-box .carousel-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .3s linear
+}
+.carousel-wrapper .carousel-item{
+    flex: 0 0 237px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    height: 180px;
+    margin-right: 20px;
+}
+.carousel-wrapper .carousel-item:last-child{
+    margin-right: 0;
+}
+.carousel-wrapper .carousel-item img{
+    display: block;
+    width: 100%;
+    height: 180px;
+    background: #22cad0;
+}
+
+.carousel-box .btn{
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+}
+.carousel-box .btn.prev{
+    left: 0;
+    background: url("http://lib.861718.com/images/icon/arrow-left.png") no-repeat center center;
+    background-size: contain;
+}
+.carousel-box .btn.next{
+    right: 0;
+    background: url("http://lib.861718.com/images/icon/arrow-right.png") no-repeat center center;
+    background-size: contain;
+}
+
+.referral-msg{
+    margin-top 30px
+}
+.referral-msg p {
+
+}
+.referral-msg a {
+    font-size 18px
+    line-height 35px
+    margin-left 20px
+}
+
+
+/* 弹框 */
+.alert {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 310px;
+    height: 185px;
+    background: #fff;
+    margin: -92.5px 0 0 -155px;
+    padding: 12px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3)
+}
+.alert .title {
+    font-size: 14px;
+    font-weight: bold;
+    width: 280px;
+    margin: auto;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #5abce3;
+}
+.alert .msg {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 34px;
+}
+.alert .msg img {
+    margin-right: 10px;
+}
+/* 关闭按钮 */
+.close {
+    width: 63px;
+    height: 26px;
+    margin: 20px auto 0;
+    background: url(http://car.861718.com/images/close.png) no-repeat;
+    position: relative;
+    top: 10px;
+}

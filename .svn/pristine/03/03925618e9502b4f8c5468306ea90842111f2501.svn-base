@@ -1,0 +1,19 @@
+module.exports = {
+    "extends": "standard",
+    "plugins": [
+        "html"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+        "no-unused-vars": [2, { 
+        // 允许声明未使用变量
+        "vars": "local",
+        // 参数不检查
+        "args": "none" 
+        }],
+        "no-new" : 0,
+        "no-alert": 0,
+        "np-console": 0,
+        "no-undef": 0 // 关闭不能使用window上的对象
+    }
+}

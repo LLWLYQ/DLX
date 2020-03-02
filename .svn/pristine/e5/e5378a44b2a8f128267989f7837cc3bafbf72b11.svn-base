@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hello Vue</title>
+<link href="/static/css/styles.49437ced.css" rel="stylesheet"></head>
+<body>
+  <div id="root"></div>
+<script type="text/javascript" src="./static/js/runtime.121f2125.js"></script><script type="text/javascript" src="./static/js/vendor.e13225ca.js"></script><script type="text/javascript" src="./static/js/app.d37424e0.js"></script></body>
+</html>

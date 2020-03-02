@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 强制让文档与设备的宽度保持1：1 -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 删除默认的苹果工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 在web app应用下状态条（屏幕顶部条）的颜色 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>5g - 企业登记</title>
+    <link rel="stylesheet" href="http://lib.albers.top/js/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="http://lib.albers.top/style/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="baseW-1100">
+    <div class="banner">
+        <img src="images/banner.png" alt="">
+    </div>
+    <div class="nav">
+        <a href="index.html" >首页</a>
+        <a href="metting.html">会议</a>
+        <a href="guest.html">演讲嘉宾</a>
+        <a href="show.html">展览</a>
+        <a href="review.html">往届回顾</a>
+        <a href="chart.html">组织架构</a>
+        <a href="company_zanzhu.html" class="cur">我要赞助</a>
+        <a href="company_login.html">我要参展</a>
+        <a href="guest_login.html">我要参观</a>
+        <a href="contact.html">联系我们</a>
+    </div>
+    <!--企业登记-->
+    <div class="MgT70 baseW-1100">
+        <div class="  base-tit-left">
+            <h1>赞助报名</h1>
+        </div>
+        <div class="login-box company-box">
+            <form method="post" enctype="multipart/form-data" accept-charset="utf-8" class="layui-form">
+                <div class="form_Input">
+                    <label for="company_name">企业名称：</label>
+                    <input type="text" name="company_name" id="company_name" placeholder="请填写您的公司名" lay-verify="required|username">
+                    <i>*</i>
+                </div>
+                <div class="form_Input">
+                    <label for="username">联系人：</label>
+                    <input type="text" name="company_contract" id="company_contract" placeholder="请填写您的姓名" lay-verify="required|username">
+                    <i>*</i>
+                </div>
+                <div class="form_Input">
+                    <label for="username">电话：</label>
+                    <input type="text" name="company_tel" id="company_tel" placeholder="请填写您的联系电话" lay-verify="required|phone|number">
+                    <i>*</i>
+                </div>
+                <div class="form_Input">
+                    <label for="files">名片：</label>
+                    <button type="button" class="upload" id="files">
+                        <em>+</em>
+                        <a href="javascript:;"></a>
+                    </button>
+                    <input class="layui-upload-file" type="file" name="file">
+                    <input type="hidden" name="picId" id="picId" value="">
+                    <img src="" id="preview" alt="" width="60" height="60" style="display: none;vertical-align: bottom;">
+                    <span>上传名片</span>
+                </div>
+                <p style="color: red;margin:0 0 10px 85px; ">提示:请上传已拍照好的图片</p>
+                <div class="form_Input">
+                    <label for="company_msg">赞助需求：</label>
+                    <textarea name="company_need" id="company_need"></textarea>
+                </div>
+                <button lay-submit="" class="btn" lay-filter="*"></button>
+            </form>
+        </div>
+    </div>
+    <!--联系我们-->
+    <div class="contact MgT70 baseW-1100">
+        <div class="  base-tit-left">
+            <h1>联系我们</h1>
+        </div>
+        <div class="contact-box MgT30">
+            <div class="contact-box-left">
+                <h1>广东省仪器仪表学会 <br>
+                    深圳市仪器仪表学会（广州联络处）</h1>
+                <p> 联系人：马先生；林小姐</p>
+                <p>电话：020-84133863；020-34397448</p>
+                <p>手机：13824486858；18825137388</p>
+                <p>邮箱：sva5225@163.com；fionalgd@163.com</p>
+            </div>
+            <div class="contact-box-right">
+                <h1>深圳市仪器仪表学会（秘书处）</h1>
+                <p>联系人：欧日旭先生</p>
+                <p>电话：0775-2320 7500</p>
+                <p>手机：13662444177</p>
+                <p>邮箱：ourixu@861718.com</p>
+            </div>
+        </div>
+    </div>
+    <div style="height: 70px;"></div>
+    <div class="footer">
+        <div class="web-map baseW-1100">
+            <a href="index.html" >首页</a>
+            <a href="metting.html">会议</a>
+            <a href="guest.html" class="cur">演讲嘉宾</a>
+            <a href="show.html">展览</a>
+            <a href="review.html">往届回顾</a>
+            <a href="chart.html">组织架构</a>
+            <a href="company_zanzhu.html">我要赞助</a>
+            <a href="company_login.html">我要参展</a>
+            <a href="guest_login.html">我要参观</a>
+            <a href="contact.html">联系我们</a>
+        </div>
+        <p>Copyright © 2000-2018　<a href="http://www.861718.com" target="_blank">861718.com　</a>
+            All rights reserved 版权所有 © 广州德禄讯信息科技有限公司</p>
+    </div>
+    <a href="javascript:scroll(0,0)" class="goBack"></a>
+    <!--弹框-->
+    <div class="alert">
+        <h1 class="title">提示</h1>
+        <div class="msg">
+            <img src="http://car.861718.com/images/click.png" alt="">
+            <span>提交成功</span>
+        </div>
+        <button class="btn close"></button>
+    </div>
+</div>
+<script src="http://lib.albers.top/js/lib/layui/layui.js"></script>
+<script src="http://lib.albers.top/js/jquery-min.js"></script>
+<script type="text/javascript">
+    layui.use(['upload','form','layer'],function(){
+        var upload = layui.upload,
+            form = layui.form,
+            layer = layui.layer;
+
+        var uploadInst = upload.render({
+            elem: '#files' //绑定元素
+            ,url: 'http://dlx.albers.top/auto/image' //上传接口
+            ,before: function(obj){
+                layer.load();
+            }
+            ,done: function(res){
+                //上传完毕回调
+                if(res.code == 1){
+                    $('#picId').val(res.id);
+                    $('#preview').attr('src',res.url).css('display','inline-block');
+                }
+                layer.closeAll('loading'); //关闭loading
+            }
+            ,error: function(){
+                //请求异常回调
+            }
+        });
+
+        form.verify({
+            username: function(value, item){ //value：表单的值、item：表单的DOM对象
+                if(!new RegExp("^[a-zA-Z0-9_\u4e00-\u9fa5\\s·]+$").test(value)){
+                    return '用户名不能有特殊字符';
+                }
+                if(/(^\_)|(\__)|(\_+$)/.test(value)){
+                    return '用户名首尾不能出现下划线\'_\'';
+                }
+                if(/^\d+\d+\d$/.test(value)){
+                    return '用户名不能全为数字';
+                }
+            }
+        });
+
+        // 表单提交
+        form.on('submit(*)',function(data){
+            $.post('http://ims.861718.com/auto/viewer',data.field,function(result){
+                var event = $.parseJSON(result);
+                if(event.code == 1){
+                    $('.alert').fadeIn(300);
+                    $('.alert .msg').find('span').html(event.msg)
+                }else{
+                    layer.alert(event.msg,{icon:2},function(index){
+                        layer.close(index)
+                    })
+                }
+            })
+            return false;
+        })
+    })
+    $(function(){
+        // 关闭
+        $('.close').click(function(){
+            $('.alert').fadeOut(300, function() {
+                // 刷新界面
+                window.location.reload()
+            });
+        })
+    })
+</script>
+</body>
+</html>

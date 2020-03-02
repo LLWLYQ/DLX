@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 强制让文档与设备的宽度保持1：1 -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 删除默认的苹果工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 在web app应用下状态条（屏幕顶部条）的颜色 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>展览</title>
+    <link rel="stylesheet" href="http://lib.albers.top/style/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="baseW-1100">
+        <div class="banner">
+            <img src="images/banner.png" alt="">
+        </div>
+        <div class="nav">
+            <a href="index.html" >首页</a>
+            <a href="metting.html">会议</a>
+            <a href="guest.html">演讲嘉宾</a>
+            <a href="show.html" class="cur">展览</a>
+            <a href="review.html">往届回顾</a>
+            <a href="chart.html">组织架构</a>
+            <a href="company_zanzhu.html">我要赞助</a>
+            <a href="company_login.html">我要参展</a>
+            <a href="guest_login.html">我要参观</a>
+            <a href="contact.html">联系我们</a>
+        </div>
+        <!--展览概况-->
+        <div class="referral baseW-1100 MgT70">
+            <div class="  base-tit-left">
+                <h1>展览概况</h1>
+            </div>
+            <div class="referral-msg">
+                <p>2019中国通信与工业互联网展览会 IMCA第十六届国际论坛暨2019 中国5G核心技术大会，分展览与技术论坛两部分，届时将为参展厂商提供全面的展示机会； 同时也使观众能够通过参观展会、听讲论坛报告更深入地与厂商交流互动。</p>
+                <p>以企业的科技创新发展成果展示和技术研发方向为视角，通过对经典案例的分享和探讨，呈现最新的通信技术与工业互联网和智能制造落地实施的最新进展和技术发展动态。并以最新的电子测试测量技术与应用，解读未来系统所带来的挑战和机遇，推动产业的发展。</p>
+                <p>主办单位将秉承论坛与展会的成功经验，加强与国内外行业协会、媒体的合作，整合行业资源，进一步提升展会的规模和专业化程度</p>
+                <p>为行业提供一个技术交流与市场推广的专业化平台! 立足深圳，展望整个亚太地区，2019中国通信与工业互联网展览会是您不可错过的行业盛会!</p>
+            </div>
+        </div>
+        <!--产品方向-->
+        <div class="product-line baseW-1100 MgT70">
+            <div class="  base-tit-left">
+                <h1>产品方向</h1>
+            </div>
+            <div class="product-line-box MgT30">
+                <h1>01 通信技术</h1>
+                <div class="pro-box-one MgT30">
+                    <div class="pro-item">
+                        <img src="images/icon-pro/1.png" alt="">
+                        <h1>电子测试技术</h1>
+                        <p>通信通用仪器：分析仪、宽带示波器、光谱分析仪、以太网数
+                            据分析仪、天馈线测试仪、信令分析仪、频谱分析仪仪、无线
+                            通信测试仪</p>
+                    </div>
+                    <div class="pro-item">
+                        <img src="images/icon-pro/2.png" alt="">
+                        <h1>微波，毫米波，射频</h1>
+                        <p>通信微波设备、微波原件、部件毫米波天线、辐射计、探头
+                            射频功率计、便携式产品、组件、RF测试</p>
+                    </div>
+                    <div class="pro-item">
+                        <img src="images/icon-pro/3.png" alt="">
+                        <h1>封装与测试</h1>
+                        <p>半导体、芯片和模组、可编程器件、测试仪器</p>
+                    </div>
+                    <div class="pro-item">
+                        <img src="images/icon-pro/4.png" alt="">
+                        <h1>EMC与EMI</h1>
+                        <p>EMC电波暗室、电磁干扰、EMI滤波器测试与控制仪器设备
+                            、智能检测系统</p>
+                    </div>
+                    <div class="pro-item">
+                        <img src="images/icon-pro/5.png" alt="">
+                        <h1>物联网智能解决方案</h1>
+                        <p>嵌入式物联网系统、软硬件优化设计大数据及云计算、
+                            工业设备联网软硬件产品</p>
+                    </div>
+                    <div class="pro-item">
+                        <img src="images/icon-pro/6.png" alt="">
+                        <h1>网络运营终端</h1>
+                        <p>设备制造商、网络运营商、平台供应商、系统集成商
+                            一站式解决方案、信息安全</p>
+                    </div>
+                </div>
+                <h1 class="MgT30">02 工业互联网与智能制造</h1>
+                <div class="pro-box-two">
+                    <div class="pro-item">
+                        <div class="pro-img">
+                            <img src="images/icon-pro/7.png" alt="">
+                        </div>
+                        <h1>测试测量技术</h1>
+                        <p>现场仪表（在线检测）  传感器    机器视觉检测智能仪器 虚拟软件嵌入式技术仿真技术工业专用测试仪器、热像仪</p>
+                    </div>
+                    <div class="pro-item">
+                        <div class="pro-img">
+                            <img src="images/icon-pro/8.png" alt="">
+                        </div>
+                        <h1>工业通信与安全</h1>
+                        <p>现场总线 工业以太网 工业无线  机器视觉 物联网  车联网工业连接    集成电路部件连接器电子元件EMC  微波   毫米波太赫兹</p>
+                    </div>
+                    <div class="pro-item">
+                        <div class="pro-img">
+                            <img src="images/icon-pro/9.png" alt="">
+                        </div>
+                        <h1>机器控制 ︱过程控制</h1>
+                        <p>PLC    DCS    HMI    控制系统  嵌入式系统运动控制 工业机器人控制软件工控机人机界面变频器电机与运动控制远程监控</p>
+                    </div>
+                    <div class="pro-item">
+                        <div class="pro-img">
+                            <img src="images/icon-pro/10.png" alt="">
+                        </div>
+                        <h1>优化︱集成︱管理</h1>
+                        <p>MES   PLM 能效管理设备管理与维护 工业数据方案物联网设备后端系统</p>
+                    </div>
+                    <div class="pro-item">
+                        <div class="pro-img">
+                            <img src="images/icon-pro/11.png" alt="">
+                        </div>
+                        <h1>智能制造</h1>
+                        <p>新一代信息技术、高档数控机床和机器人、模具金属加工、机械工业、电子与电力装备
+                            智能控制测试系统、工业自动化软件、系统集成测试、可靠性安全测试；数字化智能化精密检测、工业通讯</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="exhibition baseW-1100 MgT70">
+            <div class="  base-tit-left">
+                <h1>展览展示</h1>
+            </div>
+            <div class="exhibition-box MgT30">
+                <img src="images/show-banner-2.png" alt="">
+            </div>
+        </div>
+        <div class="rates baseW-1100 MgT70">
+            <div class="  base-tit-left">
+                <h1>收费标准</h1>
+            </div>
+            <div class="rates-box MgT30">
+                <img src="images/show-banner-3.png" alt="">
+            </div>
+        </div>
+        <div class="company-go baseW-1100 MgT70">
+            <div class="  base-tit-left">
+                <h1>参会企业</h1>
+            </div>
+            <div class="company-img-box">
+                <img src="images/test/test3.png" alt="">
+            </div>
+        </div>
+        <div style="height: 70px;"></div>
+        <div class="footer">
+            <div class="web-map baseW-1100">
+                <a href="index.html" >首页</a>
+                <a href="metting.html">会议</a>
+                <a href="guest.html" class="cur">演讲嘉宾</a>
+                <a href="show.html">展览</a>
+                <a href="review.html">往届回顾</a>
+                <a href="chart.html">组织架构</a>
+                <a href="company_zanzhu.html">我要赞助</a>
+                <a href="company_login.html">我要参展</a>
+                <a href="guest_login.html">我要参观</a>
+                <a href="contact.html">联系我们</a>
+            </div>
+            <p>Copyright © 2000-2018　<a href="http://www.861718.com" target="_blank">861718.com　</a>
+                All rights reserved 版权所有 © 广州德禄讯信息科技有限公司</p>
+        </div>
+        <a href="javascript:scroll(0,0)" class="goBack"></a>
+    </div>
+</body>
+</html>
